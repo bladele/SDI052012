@@ -40,15 +40,15 @@ whatToDo();
 
 //Number function
 var timeItook = function(birthDate) {
-	var birthDate = 1979;
+	timeDiff = 2012 - birthDate;
 	while (birthDate < 2012) {
 		console.log("In " + birthDate + ", I had no answer to life's big question.");
 		birthDate++;
 	}
-};
-timeItook();
+	console.log("So 2012 is the year of clarity. It only took " + timeDiff + " years.");
 
-console.log("So 2012 is the year of clarity.");
+};
+timeItook(1979); 
 
 
 
