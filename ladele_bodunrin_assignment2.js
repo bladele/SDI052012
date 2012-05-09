@@ -5,9 +5,6 @@
 var name = "Bodunrin Ladele",
 	birthDate = 1979,
 	birthPlace = "Ibandan, Nigeria",
-	chldHdTrauma = true,
-	disftnlWrld = ["curruption", "violence", "poverty", "greed", "misfortune"],
-	liberator = ["love"],
 	paralzr = ["fear", "self doubt", "self pity"]
 ;
 
@@ -19,17 +16,19 @@ console.log("My name is " + name + " and I was born in " + birthPlace + " in " +
 var doIHaveHope = function(chldHdTrauma, disftnlWrld) {
 	var chldHdTrauma = true;
 	var disftnlWrld = ["curruption", "violence", "poverty", "greed", "misfortune"];
+	var liberator = ["love"];
 	if ((chldHdTrauma = true) && (disftnlWrld.length > liberator.length)) {
-		return lifeWithPurps;
+		console.log("false")
 	}	else {
-		return whatToDo;
+		console.log("true")
 	}
 };
-
+doIHaveHope();
 //Boolean function
-var whatToDo = function(humbLove, originOutput) {
-	var originOutput = ["family", "friends", "significant others", "work", "play", "socialization"];
-	var humbLove = originOutput.length * 2;
+var whatToDo = function(humbLove, loveOrignOutput) {
+	var loveOrignOutput = ["family", "friends", "significant others", "work", "play", "socialization"];
+	var	disftnlWrld = ["curruption", "violence", "poverty", "greed", "misfortune"];
+	var humbLove = loveOrignOutput.length * 2;
 	if (humbLove > disftnlWrld.length) {
 		console.log("I found the answer.");
 	} else {
@@ -51,7 +50,10 @@ var timeItook = function(birthDate) {
 timeItook(1979); 
 
 
+//String & Array Function
+var lifeWithPurps = function() {
 
 
+};
 
 
