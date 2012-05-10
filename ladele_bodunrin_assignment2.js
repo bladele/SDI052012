@@ -13,19 +13,24 @@ var name = "Bodunrin Ladele",
 console.log("My name is " + name + " and I was born in " + birthPlace + " in " + birthDate + ".");
 
 //Prodedure.
-var doIHaveHope = function(chldHdTrauma, disftnlWrld) {
+var expriencObsvtn = function() {
 	var chldHdTrauma = true;
 	var disftnlWrld = ["curruption", "violence", "poverty", "greed", "misfortune"];
 	var liberator = ["love"];
 	if ((chldHdTrauma = true) && (disftnlWrld.length > liberator.length)) {
-		console.log("false")
+		console.log("The experiences I had as a child and what I saw in the world made me wonder, 'What is the point?'");
+		console.log("The things I saw that were disheartening where: " + disftnlWrld);
 	}	else {
-		console.log("true")
+		console.log("No worries here, I am driven by society and it's directive.");
 	}
+
 };
-doIHaveHope();
+
+
+expriencObsvtn();
+
 //Boolean function
-var whatToDo = function(humbLove, loveOrignOutput) {
+var whatToDo = function() {
 	var loveOrignOutput = ["family", "friends", "significant others", "work", "play", "socialization"];
 	var	disftnlWrld = ["curruption", "violence", "poverty", "greed", "misfortune"];
 	var humbLove = loveOrignOutput.length * 2;
@@ -50,11 +55,26 @@ var timeItook = function(birthDate) {
 timeItook(1979); 
 
 
-//String & Array Function
-var lifeWithPurps = function() {
-	var 
+//Array Function
+var lifeIsGood = function() {
+	var thingsWeHave = ["family", "friends", "work", "play", "socialization"];
+	var theGood = ["love", "friendship", "fullfilment", "joy", "empathy"];
+	var theBad = ["fear", "self doubt", "self pity"];
 
+	for (var i = 0, j = theGood.length; i < j; i++) {
+	console.log("My " + thingsWeHave[i] + " adds " + theGood[i] + " to the goodness of life.");	
+	}
+	
+	if (theGood.length > theBad.length) {
+		console.log("Life is good when I engage the world.");
+	}
+	else {
+		console.log("Life sucks!");
+	}
 
 };
+lifeIsGood();
+
+
 
 
