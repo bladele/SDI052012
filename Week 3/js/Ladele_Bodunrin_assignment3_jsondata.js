@@ -8,6 +8,7 @@ var json = {
  		{
  			"name": "Bodunrin Ladele",
  			"gender": "male",
+ 			"birthPlace" : "Ibandan, Nigeria",
  			"birthYr" : 1979,
  			"chldHdTrauma" : true,
  			"disftnlWrld" : ["curruption", "violence", "poverty", "greed", "misfortune"],
