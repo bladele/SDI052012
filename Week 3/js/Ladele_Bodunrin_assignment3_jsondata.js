@@ -6,11 +6,14 @@
 var json = {
  	"journeyMan": [ 
  		{
- 			"uuid" : "001",
- 			"name": "Bibi",
- 			"sex": "male",
+ 			"name": "Bodunrin Ladele",
+ 			"gender": "male",
  			"birthYr" : 1979,
- 			"activity" : ["news", " gaming", " reading", " reference", " utility", " entertainment", "communication", "productivity"],
+ 			"chldHdTrauma" : true,
+ 			"disftnlWrld" : ["curruption", "violence", "poverty", "greed", "misfortune"],
+ 			"goodLife" :["family", "friends", "work", "play", "socialization"],
+ 			"theGood" : ["love", "friendship", "fullfilment", "joy", "empathy"],
+ 			"catalyst" : "sunset"
  		}
  	]
 };
