@@ -13,11 +13,14 @@ var me = json.journeyMan[0].name,
 ;
 
 //Object within control file so I can creat methods.
-var lifeExprnce = {
+var myVars = {
 	chldHdTrauma: "true",
 	chldHdComfrt: "true",
 	disftnlWrld: ["curruption", "violence", "poverty", "greed", "misfortune"],
 	paralzr: ["fear", "self doubt", "self pity"],
+	postive: ["family", "friends", "work", "play", "socialization"],
+	goodInLife: ["love", "friendship", "fullfilment", "joy", "empathy"],
+	catalyst: "sunset"
 
 };
 
