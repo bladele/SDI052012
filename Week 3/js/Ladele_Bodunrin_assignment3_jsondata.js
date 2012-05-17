@@ -10,7 +10,12 @@ var json = {
  			"gender": "male",
  			"birthPlace" : "Ibandan, Nigeria",
  			"birthYr" : 1979,
- 			"liveIn" : "Concord, NC"
+ 			"liveIn" : "Concord, NC",
+ 			"chldHdTrauma" : true,
+ 			"disftnlWrld" : ["curruption", "violence", "poverty", "greed", "misfortune"],
+ 			"goodLife" :["family", "friends", "work", "play", "socialization"],
+ 			"theGood" : ["love", "friendship", "fullfilment", "joy", "empathy"],
+ 			"catalyst" : "sunset"
  			
  		}
  	]
