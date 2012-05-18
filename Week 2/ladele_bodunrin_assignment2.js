@@ -13,16 +13,7 @@ var name = "Bodunrin Ladele",
 console.log("My name is " + name + " and I was born in " + birthPlace + " in " + birthDate + ".");
 
 //Prodedure.
-var expriencObsvtn = function() {
-	var chldHdTrauma = true;
-	var disftnlWrld = ["curruption", "violence", "poverty", "greed", "misfortune"];
-	var liberator = ["love"];
-	if ((chldHdTrauma = true) && (disftnlWrld.length > liberator.length)) {
-		console.log("The experiences I had as a child and what I saw in the world made me wonder, 'What is the point?'");
-		console.log("The things I saw that were disheartening where: " + disftnlWrld);
-	}	else {
-		console.log("No worries here, I am driven by society and it's directive.");
-	}
+
 
 };
 
