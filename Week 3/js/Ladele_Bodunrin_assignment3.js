@@ -98,5 +98,3 @@ myVars.lifePrspctv(3);
 
 
 
-
-
