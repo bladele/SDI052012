@@ -5,7 +5,7 @@
 var bibiLib = function() {
 	
 
-// Checks to see if the given string is a valid phone number
+//1. Checks to see if the given string is a valid phone number
 var checkPhone = function(phoneNum) {
 	var patt1 = /\d{3}\d{3}\d{4}/; 
 	var phoneTest = patt1.test(phoneNum); 
@@ -20,7 +20,7 @@ var checkPhone = function(phoneNum) {
 			"checkPhone": checkPhone
 		  }
 
-// Check to see if the given string is a valid email address
+//2. Check to see if the given string is a valid email address
 var checkEmail = function(address) {
 	var patt2 = /\w+@\w+.\w{2,3}$/;
 	var mailTest = patt2.test(address);
@@ -35,7 +35,7 @@ var checkEmail = function(address) {
 		"checkEmail": checkEmail
 		}
 
-// Check to see if the given string is a valid URL address
+//3. Check to see if the given string is a valid URL address
 var checkUrl = function(link){
 	var patt3 = /^http[s]?:/;
 	var urlTest = patt3.test(checkString);
@@ -50,11 +50,23 @@ var checkUrl = function(link){
 		"checkUrl": checkUrl
 	}
 
-// Change a numbers within a string to number integers.
+//4. Change a numbers within a string to number integers.
 var stringToNumb = function(strNum){
-var theNum = parseInt(strNum);
-var theResult = theNum; 
-	if (theNum = Nan) {
+	var theNum = parseInt(strNum);
+	var theResult = theNum; 
+	if(isNaN(strNum)) {
+		return NaN;
+	} else {
+		return theNum;
+	}
+};
+
+//5. see if Check is within pct Percent of numberRef
+var fuzzyMatch = function(numberRef, numberCheck, pct){
+	var bigNum = numberRef + (numberRef * (pct/100));
+	var lilNum = numberRef - (numberRef * (pct/100));
+	var result = ( numberCheck <= bigNum || numberCheck >= lilNum);
+	if(result = true) {
 		return true;
 	} else {
 		return false;
