@@ -1,4 +1,4 @@
-// Library: Utility
+// Library: bibiLib
 // Author: Bodunrin Ladele
 // Created for: SDI Online
 
@@ -11,13 +11,10 @@ bibiLib.checkPhone = function(checkString) {
 	var patt = /\d{3}\d{3}\d{4}/; 
 	var phoneTest = patt.test(checkString); 
 	if(phoneTest == true) {
-			return true;
+			console.log(checkString + " is a valid phone number.");
 		  } else {
-		  	return false;
+		  	console.log(checkString + " is not a valid phone number.");
 		  }
-		  return{
-			"checkPhone": checkPhone
-		  	}
 	};
 
 			
@@ -27,13 +24,11 @@ bibiLib.checkEmail = function(checkString) {
 	var patt = /\w+@\w+.\w{2,3}$/;
 	var mailTest = patt.test(checkString);
 	if(mailTest == true) {
-			return true;
+			console.log(checkString + " is a valid email address.");
 			} else {
-		  	return false;
+		  	console.log(checkString + " is not a valid email address.");
 			}
-			return{
-			"checkEmail": checkEmail
-			}
+			
 	};
 
 			
@@ -43,13 +38,12 @@ bibiLib.checkLink = function(checkString){
 	var patt1 = /^http[s]?:/; 
 	var urlTest = patt1.test(checkString);
 	if(urlTest == true) {
-			return true;
+			console.log(checkString + " is a valid URL.");
 			} else {
-			return false;
+			console.log(checkString + " is not a valid URL.");
+
 			}
-			return{
-			"checkLink": checkLink
-			}
+			
 };
 
 	
@@ -68,30 +62,34 @@ bibiLib.stringToNumb = function(strNum){
 			}
 };
 
-//5. See if Check is within pct Percent of numberRef
-bibiLib.fuzzyMatch = function(numberRef, numberCheck, pct){
+//5.Title-case a string
+bibiLib.changeCase = function (string){
+	string = string.toLowerCase().replace(/\b[a-z]/g, //Changes all letters in string to lower case.
+	function(letter) {
+    return letter.toUpperCase(); //Changes first letter of each word to an upper case letter.
+	});
+	console.log(string); 
+};
+
+//6.Format a number to use a specific number of decimal places, as for money: 2.1 → 2.10
+bibiLib.fixNum = function(num) {
+    var fixedNum = console.log(num.toFixed(2));//Limits the number of decimal places to 2.
+    return fixedNum;
+};
+
+
+//7. Fuzzy-match a number
+bibiLib.fuzzyMatch = function(numberRef, numberCheck, pct){ //
 	var bigNum = numberRef + (numberRef * (pct/100));
 	var lilNum = numberRef - (numberRef * (pct/100));
 	console.log(bigNum, lilNum);
 	if((numberCheck <= bigNum) || (numberCheck >= lilNum)) {
-			console.log("is");
+			console.log(numberCheck + " is within " + pct + "% of " + numberRef + ".");
 			} else {
-			console.log("is not");
+			console.log(numberCheck + " is not within " + pct + "% of " + numberRef + ".");
 			}
-			
-//6.  Title Case 
 
-
-
-
-
-
-
-};
-
-
-
-
+	};
 
 
 
@@ -99,6 +97,9 @@ console.log(bibiLib.checkPhone(123));
 console.log(bibiLib.checkEmail("bladele@me"));
 console.log(bibiLib.checkLink("http://www.apple.com/"));
 console.log(bibiLib.stringToNumb("100"));
-console.log(bibiLib.fuzzyMatch(100, 10, 60));
-console.log(bibiLib.numberSum("I want 10 pens."))
+console.log(bibiLib.fuzzyMatch(100, 10, 10));
+console.log(bibiLib.fixNum(4.123890));
+console.log(bibiLib.changeCase("my name is bibi."));
+
+
 
